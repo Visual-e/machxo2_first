@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<BuildStatus>
+    <Strategy name="Strategy1">
+        <Milestone name="Convert_HDL" build_result="2" build_time="1485021252">
+            <Task name="HDL_Conv" build_result="2" update_result="0" update_time="1485021252"/>
+        </Milestone>
+        <Milestone name="Export" build_result="0" build_time="0">
+            <Task name="IBIS" build_result="0" update_result="3" update_time="0"/>
+            <Task name="TimingSimFileVlg" build_result="0" update_result="3" update_time="0"/>
+            <Task name="TimingSimFileVHD" build_result="0" update_result="3" update_time="0"/>
+            <Task name="Bitgen" build_result="0" update_result="3" update_time="0"/>
+            <Task name="Jedecgen" build_result="2" update_result="0" update_time="1485021270"/>
+        </Milestone>
+        <Milestone name="Generate_HDL" build_result="2" build_time="1485021252">
+            <Task name="HDL_Gen" build_result="2" update_result="0" update_time="1485021252"/>
+        </Milestone>
+        <Milestone name="Map" build_result="2" build_time="1485021259">
+            <Task name="Map" build_result="2" update_result="0" update_time="1485021259"/>
+            <Task name="MapTrace" build_result="0" update_result="3" update_time="0"/>
+            <Task name="MapVerilogSimFile" build_result="0" update_result="3" update_time="0"/>
+            <Task name="MapVHDLSimFile" build_result="0" update_result="3" update_time="0"/>
+        </Milestone>
+        <Milestone name="PAR" build_result="2" build_time="1485021266">
+            <Task name="PAR" build_result="2" update_result="0" update_time="1485021266"/>
+            <Task name="PARTrace" build_result="0" update_result="3" update_time="0"/>
+            <Task name="IOTiming" build_result="0" update_result="3" update_time="0"/>
+        </Milestone>
+        <Milestone name="Synthesis" build_result="2" build_time="1485021258">
+            <Task name="Lattice_Synthesis" build_result="2" update_result="0" update_time="1485021258"/>
+            <Task name="LSE_Compile" build_result="2" update_result="0" update_time="1485021270"/>
+        </Milestone>
+        <Milestone name="TOOL_Report" build_result="0" build_time="0">
+            <Task name="SSO" build_result="0" update_result="3" update_time="0"/>
+            <Task name="HDLE" build_result="2" update_result="0" update_time="1485021252"/>
+        </Milestone>
+        <Report name=".vdbs/machxo2_first_impl1_map.vdb" last_build_time="1485021259" last_build_size="41783"/>
+        <Report name="machxo2_first_impl1.bgn" last_build_time="1485021270" last_build_size="4227"/>
+        <Report name="machxo2_first_impl1.jed" last_build_time="1485021270" last_build_size="1464837"/>
+        <Report name="machxo2_first_impl1.lsedata" last_build_time="1485021257" last_build_size="54246"/>
+        <Report name="machxo2_first_impl1.ncd" last_build_time="1485021266" last_build_size="62921"/>
+        <Report name="machxo2_first_impl1.ngd" last_build_time="1485021258" last_build_size="53671"/>
+        <Report name="machxo2_first_impl1.tw1" last_build_time="1472656355" last_build_size="9618"/>
+        <Report name="machxo2_first_impl1.twr" last_build_time="1472656375" last_build_size="45805"/>
+        <Report name="machxo2_first_impl1_map.ncd" last_build_time="1485021259" last_build_size="47462"/>
+        <Report name="machxo2_first_impl1_mapvho.sdf" last_build_time="1472656361" last_build_size="37764"/>
+        <Report name="machxo2_first_impl1_mapvho.vho" last_build_time="1472656361" last_build_size="299434"/>
+        <Report name="machxo2_first_impl1_mapvo.sdf" last_build_time="1472656358" last_build_size="37822"/>
+        <Report name="machxo2_first_impl1_mapvo.vo" last_build_time="1472656358" last_build_size="45801"/>
+        <Report name="main.v" last_build_time="1485021252" last_build_size="407"/>
+    </Strategy>
+</BuildStatus>

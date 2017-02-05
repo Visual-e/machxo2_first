@@ -1,0 +1,8 @@
+all messages logged in file E:/projects/prj_fpga_lattice/prj_VE-LCMXO27000HC/lcmx_prj/projects/machxo2_first/impl1/reveal_error.log
+Analyzing Verilog file D:/dev/lattice/lscc/diamond/3.7_x64/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v (VERI-1482)
+Analyzing Verilog file E:/projects/prj_fpga_lattice/prj_VE-LCMXO27000HC/lcmx_prj/projects/machxo2_first/hvsync.v (VERI-1482)
+Analyzing Verilog file E:/projects/prj_fpga_lattice/prj_VE-LCMXO27000HC/lcmx_prj/projects/machxo2_first/impl1/main.v (VERI-1482)
+INFO: E:/projects/prj_fpga_lattice/prj_VE-LCMXO27000HC/lcmx_prj/projects/machxo2_first/hvsync.v(5): compiling module hvsync (VERI-1018)
+INFO: E:/projects/prj_fpga_lattice/prj_VE-LCMXO27000HC/lcmx_prj/projects/machxo2_first/hvsync.v(99): elaborating module 'hvsync' (VERI-9000)
+INFO: E:/projects/prj_fpga_lattice/prj_VE-LCMXO27000HC/lcmx_prj/projects/machxo2_first/impl1/main.v(3): compiling module main (VERI-1018)
+INFO: E:/projects/prj_fpga_lattice/prj_VE-LCMXO27000HC/lcmx_prj/projects/machxo2_first/impl1/main.v(9): elaborating module 'main' (VERI-9000)

@@ -1,0 +1,5 @@
+-rem
+-distrce
+-log "machxo2_first_impl1.log"
+-o "machxo2_first_impl1.csv"
+-pr "machxo2_first_impl1.prf"

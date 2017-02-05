@@ -1,0 +1,20 @@
+#Start recording tcl command: 8/31/2016 20:04:53
+#Project Location: E:/projects/prj_fpga_lattice/prj_VE-LCMXO27000HC/lcmx_prj/projects/machxo2_first; Project name: machxo2_first
+prj_project open "E:/projects/prj_fpga_lattice/prj_VE-LCMXO27000HC/lcmx_prj/projects/machxo2_first/machxo2_first.ldf"
+prj_src remove "E:/projects/prj_fpga_lattice/prj_VE-LCMXO27000HC/lcmx_prj/projects/machxo2_first/main.sch"
+prj_src add "E:/projects/prj_fpga_lattice/prj_VE-LCMXO27000HC/lcmx_prj/projects/machxo2_first/main.sch"
+prj_run Synthesis -impl impl1
+prj_src add "E:/projects/prj_fpga_lattice/prj_VE-LCMXO27000HC/lcmx_prj/projects/machxo2_first/vga_pll.v"
+prj_run Synthesis -impl impl1
+prj_run Map -impl impl1
+prj_run Map -impl impl1 -task MapTrace
+prj_run Map -impl impl1 -task MapVerilogSimFile
+prj_run Map -impl impl1 -task MapVHDLSimFile
+prj_run PAR -impl impl1 -task PARTrace
+prj_run Export -impl impl1 -task Jedecgen
+pgr_project open "E:/projects/prj_fpga_lattice/prj_VE-LCMXO27000HC/lcmx_prj/projects/machxo2_first/impl1/impl1.xcf"
+pgr_program run
+pgr_project save "E:/projects/prj_fpga_lattice/prj_VE-LCMXO27000HC/lcmx_prj/projects/machxo2_first/impl1/impl1.xcf"
+prj_project save
+prj_project close
+#Stop recording: 8/31/2016 20:28:34

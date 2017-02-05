@@ -1,0 +1,23 @@
+NOTE Copyright (C), 1992-2010, Lattice Semiconductor Corporation *
+NOTE All Rights Reserved *
+NOTE DATE CREATED: Sat Jan 21 22:54:30 2017 *
+NOTE DESIGN NAME: main *
+NOTE DEVICE NAME: LCMXO2-7000HC-4TQFP144 *
+NOTE PIN ASSIGNMENTS *
+NOTE PINS g[2] : 20 : out *
+NOTE PINS clki : 49 : in *
+NOTE PINS vsync : 28 : out *
+NOTE PINS r[0] : 17 : out *
+NOTE PINS g[1] : 21 : out *
+NOTE PINS r[1] : 15 : out *
+NOTE PINS r[2] : 14 : out *
+NOTE PINS r[3] : 13 : out *
+NOTE PINS hsync : 27 : out *
+NOTE PINS g[0] : 22 : out *
+NOTE PINS g[3] : 19 : out *
+NOTE PINS b[0] : 26 : out *
+NOTE PINS b[1] : 25 : out *
+NOTE PINS b[2] : 24 : out *
+NOTE PINS b[3] : 23 : out *
+NOTE CONFIGURATION MODE: NONE *
+NOTE COMPRESSION: on *

@@ -1,0 +1,238 @@
+
+Loading design for application trce from file machxo2_first_impl1_map.ncd.
+Design name: main
+NCD version: 3.3
+Vendor:      LATTICE
+Device:      LCMXO2-7000HC
+Package:     TQFP144
+Performance: 5
+Loading device for application trce from file 'xo2c7000.nph' in environment: D:/dev/lattice/lscc/diamond/3.7_x64/ispfpga.
+Package Status:                     Final          Version 1.39.
+Performance Hardware Data Status:   Final          Version 33.4.
+Setup and Hold Report
+
+--------------------------------------------------------------------------------
+Lattice TRACE Report - Setup, Version Diamond (64-bit) 3.7.1.502
+Wed Aug 31 20:12:35 2016
+
+Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
+Copyright (c) 1995 AT&T Corp.   All rights reserved.
+Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
+Copyright (c) 2001 Agere Systems   All rights reserved.
+Copyright (c) 2002-2016 Lattice Semiconductor Corporation,  All rights reserved.
+
+Report Information
+------------------
+Command line:    trce -v 1 -gt -mapchkpnt 0 -sethld -o machxo2_first_impl1.tw1 -gui -msgset E:/projects/prj_fpga_lattice/prj_VE-LCMXO27000HC/lcmx_prj/projects/machxo2_first/promote.xml machxo2_first_impl1_map.ncd machxo2_first_impl1.prf 
+Design file:     machxo2_first_impl1_map.ncd
+Preference file: machxo2_first_impl1.prf
+Device,speed:    LCMXO2-7000HC,5
+Report level:    verbose report, limited to 1 item per preference
+--------------------------------------------------------------------------------
+
+BLOCK ASYNCPATHS
+BLOCK RESETPATHS
+--------------------------------------------------------------------------------
+
+
+
+================================================================================
+Preference: FREQUENCY NET "N_1" 133.333333 MHz ;
+            129 items scored, 0 timing errors detected.
+--------------------------------------------------------------------------------
+
+
+Passed: The following path meets requirements by 1.996ns
+
+ Logical Details:  Cell type  Pin type       Cell/ASIC name  (clock net +/-)
+
+   Source:         FF         Q              I1/pixel_count_24_25__i5  (from N_1 +)
+   Destination:    FF         Data in        I1/pixel_count_24_25__i2  (to N_1 +)
+                   FF                        I1/pixel_count_24_25__i1
+
+   Delay:               5.256ns  (33.6% logic, 66.4% route), 4 logic levels.
+
+ Constraint Details:
+
+      5.256ns physical path delay I1/SLICE_2 to I1/SLICE_4 meets
+      7.500ns delay constraint less
+      0.248ns LSR_SET requirement (totaling 7.252ns) by 1.996ns
+
+ Physical Path Details:
+
+      Data path I1/SLICE_2 to I1/SLICE_4:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+REG_DEL     ---     0.409 I1/SLICE_2.CLK to  I1/SLICE_2.Q0 I1/SLICE_2 (from N_1)
+ROUTE         6   e 1.030  I1/SLICE_2.Q0 to I1/SLICE_14.A1 I1/pixel_count_5
+CTOF_DEL    ---     0.452 I1/SLICE_14.A1 to I1/SLICE_14.F1 I1/SLICE_14
+ROUTE         2   e 1.030 I1/SLICE_14.F1 to I1/SLICE_17.C1 I1/n399
+CTOF_DEL    ---     0.452 I1/SLICE_17.C1 to I1/SLICE_17.F1 I1/SLICE_17
+ROUTE         1   e 0.401 I1/SLICE_17.F1 to I1/SLICE_17.B0 I1/n291
+CTOF_DEL    ---     0.452 I1/SLICE_17.B0 to I1/SLICE_17.F0 I1/SLICE_17
+ROUTE         6   e 1.030 I1/SLICE_17.F0 to I1/SLICE_4.LSR I1/n190 (to N_1)
+                  --------
+                    5.256   (33.6% logic, 66.4% route), 4 logic levels.
+
+Report:  181.686MHz is the maximum frequency for this preference.
+
+
+================================================================================
+Preference: FREQUENCY NET "clki_c" 50.000000 MHz ;
+            0 items scored, 0 timing errors detected.
+--------------------------------------------------------------------------------
+
+Report Summary
+--------------
+----------------------------------------------------------------------------
+Preference                              |   Constraint|       Actual|Levels
+----------------------------------------------------------------------------
+                                        |             |             |
+FREQUENCY NET "N_1" 133.333333 MHz ;    |  133.333 MHz|  181.686 MHz|   4  
+                                        |             |             |
+FREQUENCY NET "clki_c" 50.000000 MHz ;  |            -|            -|   0  
+                                        |             |             |
+----------------------------------------------------------------------------
+
+
+All preferences were met.
+
+
+Clock Domains Analysis
+------------------------
+
+Found 3 clocks:
+
+Clock Domain: clki_c   Source: clki.PAD   Loads: 1
+   No transfer within this clock domain is found
+
+Clock Domain: N_1   Source: I2/PLLInst_0.CLKOP   Loads: 9
+   Covered under: FREQUENCY NET "N_1" 133.333333 MHz ;
+
+Clock Domain: hsync_c   Source: I1/SLICE_14.Q0   Loads: 9
+   No transfer within this clock domain is found
+
+
+Timing summary (Setup):
+---------------
+
+Timing errors: 0  Score: 0
+Cumulative negative slack: 0
+
+Constraints cover 129 paths, 2 nets, and 70 connections (33.65% coverage)
+
+--------------------------------------------------------------------------------
+Lattice TRACE Report - Hold, Version Diamond (64-bit) 3.7.1.502
+Wed Aug 31 20:12:35 2016
+
+Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
+Copyright (c) 1995 AT&T Corp.   All rights reserved.
+Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
+Copyright (c) 2001 Agere Systems   All rights reserved.
+Copyright (c) 2002-2016 Lattice Semiconductor Corporation,  All rights reserved.
+
+Report Information
+------------------
+Command line:    trce -v 1 -gt -mapchkpnt 0 -sethld -o machxo2_first_impl1.tw1 -gui -msgset E:/projects/prj_fpga_lattice/prj_VE-LCMXO27000HC/lcmx_prj/projects/machxo2_first/promote.xml machxo2_first_impl1_map.ncd machxo2_first_impl1.prf 
+Design file:     machxo2_first_impl1_map.ncd
+Preference file: machxo2_first_impl1.prf
+Device,speed:    LCMXO2-7000HC,M
+Report level:    verbose report, limited to 1 item per preference
+--------------------------------------------------------------------------------
+
+BLOCK ASYNCPATHS
+BLOCK RESETPATHS
+--------------------------------------------------------------------------------
+
+
+
+================================================================================
+Preference: FREQUENCY NET "N_1" 133.333333 MHz ;
+            129 items scored, 0 timing errors detected.
+--------------------------------------------------------------------------------
+
+
+Passed: The following path meets requirements by 0.447ns
+
+ Logical Details:  Cell type  Pin type       Cell/ASIC name  (clock net +/-)
+
+   Source:         FF         Q              I1/pixel_count_24_25__i4  (from N_1 +)
+   Destination:    FF         Data in        I1/pixel_count_24_25__i4  (to N_1 +)
+
+   Delay:               0.434ns  (53.9% logic, 46.1% route), 2 logic levels.
+
+ Constraint Details:
+
+      0.434ns physical path delay I1/SLICE_3 to I1/SLICE_3 meets
+     -0.013ns DIN_HLD and
+      0.000ns delay constraint requirement (totaling -0.013ns) by 0.447ns
+
+ Physical Path Details:
+
+      Data path I1/SLICE_3 to I1/SLICE_3:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+REG_DEL     ---     0.133 I1/SLICE_3.CLK to  I1/SLICE_3.Q1 I1/SLICE_3 (from N_1)
+ROUTE         7   e 0.199  I1/SLICE_3.Q1 to  I1/SLICE_3.A1 I1/pixel_count_4
+CTOF_DEL    ---     0.101  I1/SLICE_3.A1 to  I1/SLICE_3.F1 I1/SLICE_3
+ROUTE         1   e 0.001  I1/SLICE_3.F1 to I1/SLICE_3.DI1 I1/n56 (to N_1)
+                  --------
+                    0.434   (53.9% logic, 46.1% route), 2 logic levels.
+
+
+================================================================================
+Preference: FREQUENCY NET "clki_c" 50.000000 MHz ;
+            0 items scored, 0 timing errors detected.
+--------------------------------------------------------------------------------
+
+Report Summary
+--------------
+----------------------------------------------------------------------------
+Preference(MIN Delays)                  |   Constraint|       Actual|Levels
+----------------------------------------------------------------------------
+                                        |             |             |
+FREQUENCY NET "N_1" 133.333333 MHz ;    |     0.000 ns|     0.447 ns|   2  
+                                        |             |             |
+FREQUENCY NET "clki_c" 50.000000 MHz ;  |            -|            -|   0  
+                                        |             |             |
+----------------------------------------------------------------------------
+
+
+All preferences were met.
+
+
+Clock Domains Analysis
+------------------------
+
+Found 3 clocks:
+
+Clock Domain: clki_c   Source: clki.PAD   Loads: 1
+   No transfer within this clock domain is found
+
+Clock Domain: N_1   Source: I2/PLLInst_0.CLKOP   Loads: 9
+   Covered under: FREQUENCY NET "N_1" 133.333333 MHz ;
+
+Clock Domain: hsync_c   Source: I1/SLICE_14.Q0   Loads: 9
+   No transfer within this clock domain is found
+
+
+Timing summary (Hold):
+---------------
+
+Timing errors: 0  Score: 0
+Cumulative negative slack: 0
+
+Constraints cover 129 paths, 2 nets, and 70 connections (33.65% coverage)
+
+
+
+Timing summary (Setup and Hold):
+---------------
+
+Timing errors: 0 (setup), 0 (hold)
+Score: 0 (setup), 0 (hold)
+Cumulative negative slack: 0 (0+0)
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+

@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<BaliMessageLog>
+    <Task name="MapVerilogSimFile">
+        <Message>
+            <ID>35400250</ID>
+            <Severity>Info</Severity>
+            <Dynamic>0</Dynamic>
+        </Message>
+    </Task>
+    <Task name="MapVHDLSimFile">
+        <Message>
+            <ID>35400250</ID>
+            <Severity>Info</Severity>
+            <Dynamic>0</Dynamic>
+        </Message>
+    </Task>
+    <Task name="Lattice_Synthesis">
+        <Message>
+            <ID>35002000</ID>
+            <Severity>Info</Severity>
+        </Message>
+        <Message>
+            <ID>35901018</ID>
+            <Severity>Info</Severity>
+            <Dynamic>e:/projects/prj_fpga_lattice/prj_ve-lcmxo27000hc/lcmx_prj/projects/machxo2_first/impl1/main.v(3): </Dynamic>
+            <Dynamic>main</Dynamic>
+            <Navigation>e:/projects/prj_fpga_lattice/prj_ve-lcmxo27000hc/lcmx_prj/projects/machxo2_first/impl1/main.v</Navigation>
+            <Navigation>3</Navigation>
+        </Message>
+        <Message>
+            <ID>35901018</ID>
+            <Severity>Info</Severity>
+            <Dynamic>e:/projects/prj_fpga_lattice/prj_ve-lcmxo27000hc/lcmx_prj/projects/machxo2_first/hvsync.v(5): </Dynamic>
+            <Dynamic>hvsync</Dynamic>
+            <Navigation>e:/projects/prj_fpga_lattice/prj_ve-lcmxo27000hc/lcmx_prj/projects/machxo2_first/hvsync.v</Navigation>
+            <Navigation>5</Navigation>
+        </Message>
+        <Message>
+            <ID>35901018</ID>
+            <Severity>Info</Severity>
+            <Dynamic>e:/projects/prj_fpga_lattice/prj_ve-lcmxo27000hc/lcmx_prj/projects/machxo2_first/vga_pll.v(8): </Dynamic>
+            <Dynamic>vga_pll</Dynamic>
+            <Navigation>e:/projects/prj_fpga_lattice/prj_ve-lcmxo27000hc/lcmx_prj/projects/machxo2_first/vga_pll.v</Navigation>
+            <Navigation>8</Navigation>
+        </Message>
+        <Message>
+            <ID>35901018</ID>
+            <Severity>Info</Severity>
+            <Dynamic>D:/dev/lattice/lscc/diamond/diamond/3.8_x64/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v(1124): </Dynamic>
+            <Dynamic>VLO</Dynamic>
+            <Navigation>D:/dev/lattice/lscc/diamond/diamond/3.8_x64/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v</Navigation>
+            <Navigation>1124</Navigation>
+        </Message>
+        <Message>
+            <ID>35901018</ID>
+            <Severity>Info</Severity>
+            <Dynamic>D:/dev/lattice/lscc/diamond/diamond/3.8_x64/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v(1730): </Dynamic>
+            <Dynamic>EHXPLLJ_renamed_due_excessive_length_1</Dynamic>
+            <Navigation>D:/dev/lattice/lscc/diamond/diamond/3.8_x64/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v</Navigation>
+            <Navigation>1730</Navigation>
+        </Message>
+        <Message>
+            <ID>35001611</ID>
+            <Severity>Warning</Severity>
+        </Message>
+    </Task>
+</BaliMessageLog>

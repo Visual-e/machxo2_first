@@ -1,0 +1,35 @@
+----------------------------------------------------------------------
+Report for cell main.TECH
+Register bits:  26 of 7209 (0.361%)
+I/O cells:      15
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                              CCU2D        12          100.0
+                            EHXPLLJ         1          100.0
+                            FD1S3AX         2          100.0
+                            FD1S3IX        24          100.0
+                                GSR         1          100.0
+                                 IB         1          100.0
+                               LUT4        28          100.0
+                                 OB        14          100.0
+SUB MODULES
+                             hvsync         1
+                            vga_pll         1
+                              TOTAL        85
+----------------------------------------------------------------------
+Report for cell hvsync.v1
+Instance Path : I1
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                              CCU2D        12          100.0
+                            FD1S3AX         2          100.0
+                            FD1S3IX        24          100.0
+                               LUT4        28          100.0
+                              TOTAL        66
+----------------------------------------------------------------------
+Report for cell vga_pll.v1
+Instance Path : I2
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                            EHXPLLJ         1          100.0
+                              TOTAL         1

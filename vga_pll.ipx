@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<DiamondModule name="vga_pll" module="vga_pll" VendorName="Lattice Semiconductor Corporation" generator="IPexpress" date="2016 08 31 17:51:44.138" version="5.8" type="Module" synthesis="lse" source_format="Verilog HDL">
+  <Package>
+		<File name="vga_pll.lpc" type="lpc" modified="2016 08 31 17:51:40.215"/>
+		<File name="vga_pll.v" type="top_level_verilog" modified="2016 08 31 17:51:40.311"/>
+		<File name="vga_pll_tmpl.v" type="template_verilog" modified="2016 08 31 17:51:40.311"/>
+  </Package>
+</DiamondModule>
